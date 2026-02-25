@@ -4,10 +4,10 @@ import { Products } from './components/Products/Products'
 function App(props) {
   return(
     <>
-    <main>
-      <div>
+    <main className='main'>
+      
         <Products products={props.products}/>
-      </div>
+      
     </main>
     </>
   )
