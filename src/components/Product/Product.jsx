@@ -7,6 +7,8 @@ export function Product(props) {
                 props.products.map((elem) => {
                     return <div className='product'>
                         <p className='title'>{elem.title}</p>
+                        <p className='price'>Price: ${elem.price}</p>
+                        <p className='description'>{elem.description}</p>
                     </div>
                 })
             }
