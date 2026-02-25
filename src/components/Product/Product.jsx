@@ -9,6 +9,8 @@ export function Product(props) {
                         <p className='title'>{elem.title}</p>
                         <p className='price'>Price: ${elem.price}</p>
                         <p className='description'>{elem.description}</p>
+                        <p className='category'>Category: {elem.category}</p>
+                        <img src={elem.image} alt="" className='image'/>
                     </div>
                 })
             }
