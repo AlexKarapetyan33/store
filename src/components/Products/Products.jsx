@@ -1,8 +1,20 @@
 import './Products.css'
 import { Product } from '../Product/Product'
+import React from 'react'
 
-export function Products(props) {
-    return(
-        <Product products={props.products}/>
-    )
+export class Products extends React.Component {
+
+    constructor(props){
+        super(props)
+    }
+
+     render(){
+        return(
+            <>
+                {
+                    this.props.products.map((product) => <Product product={product}/>)
+                }
+            </>
+        )
+     }
 }

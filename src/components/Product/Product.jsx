@@ -9,17 +9,13 @@ export class Product extends React.Component {
     render(){
         return(
         <>
-            {
-                this.props.products.map((elem) => {
-                    return <div className='product'>
-                        <p className='title'>{elem.title}</p>
-                        <p className='price'>Price: ${elem.price}</p>
-                        <p className='description'>{elem.description}</p>
-                        <p className='category'>Category: {elem.category}</p>
-                        <img src={elem.image} alt="" className='image'/>
+                    <div className='product'>
+                        <p className='title'>{this.props.title}</p>
+                        <p className='price'>Price: ${this.props.price}</p>
+                        <p className='description'>{this.props.description}</p>
+                        <p className='category'>Category: {this.props.category}</p>
+                        <img src={this.props.image} alt="" className='image'/>
                     </div>
-                })
-            }
         </>
     )
     }
