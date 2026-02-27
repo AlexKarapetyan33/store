@@ -1,16 +1,22 @@
 import './App.css'
+import React from 'react'
 import { Products } from './components/Products/Products'
 
-function App(props) {
-  return(
+class App extends React.Component {
+
+  
+
+  render(){
+    return(
     <>
     <main className='main'>
       
-        <Products products={props.products}/>
+        <Products products={this.props.products}/>
       
     </main>
     </>
   )
+  }
 }
 
 export default App
