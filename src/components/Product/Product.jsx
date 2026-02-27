@@ -1,10 +1,16 @@
 import './Product.css'
+import React from 'react'
 
-export function Product(props) {
-    return(
+export class Product extends React.Component {
+    
+    constructor(props){
+        super(props)
+    }
+    render(){
+        return(
         <>
             {
-                props.products.map((elem) => {
+                this.props.products.map((elem) => {
                     return <div className='product'>
                         <p className='title'>{elem.title}</p>
                         <p className='price'>Price: ${elem.price}</p>
@@ -16,4 +22,5 @@ export function Product(props) {
             }
         </>
     )
+    }
 }
